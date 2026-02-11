@@ -1,0 +1,22 @@
+## Importo la librería math para usar pi ##
+import math
+
+class Circulo:
+#Calcula el área de la circunferencia
+    @staticmethod
+    def calcular_area(radio):
+        return math.pi * (radio ** 2)
+#Calcula el perímetro de la circunferencia
+    @staticmethod
+    def calcular_perimetro(radio):
+        return 2 * math.pi * radio
+
+def Radio():
+# Entrada #
+ radio = float(input("Ingrese el radio: "))
+# Salida y proceso #
+ print("El valor del área del círculo es", Circulo.calcular_area(radio))
+ print("El valor del perímetro del círculo es", Circulo.calcular_perimetro(radio))
+
+## iniciador ##
+Radio()
