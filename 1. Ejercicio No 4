@@ -1,0 +1,27 @@
+class edades:
+  @staticmethod
+  def Calcular_edad_Alberto(Edad_Juan):
+   return int(Edad_Juan * (2/3))
+
+  @staticmethod
+  def Calcular_edad_Ana(Edad_Juan):
+   return int(Edad_Juan * (4/3))
+
+  @staticmethod
+  def Calcular_edad_Mama(Edad_Juan, Edad_Alberto, Edad_Ana):
+   return int(Edad_Juan + Edad_Alberto + Edad_Ana)
+
+def calcular_edades():
+  ## ingreso de edad de Juan ##
+  Edad_Juan = int(input("Ingrese la edad de Juan: "))
+  ## Calcular las edades de Alberto y Ana ##
+  Edad_Alberto = edades.Calcular_edad_Alberto(Edad_Juan)
+  Edad_Ana = edades.Calcular_edad_Ana(Edad_Juan)
+  ## Calcular la edad de la Mamá ##
+  Edad_Mama = edades.Calcular_edad_Mama(Edad_Juan, Edad_Alberto, Edad_Ana)
+
+  # salida
+  print(f"La edad de Juan es: {Edad_Juan}.\nLa edad de Alberto es: {Edad_Alberto}.\nLa edad de Ana es: {Edad_Ana}.\nLa edad de Mamá es: {Edad_Mama}.")
+
+## iniciador ##
+calcular_edades()
