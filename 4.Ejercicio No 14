@@ -1,0 +1,29 @@
+class operaciones:
+
+ #Eleva el número ingresado al cuadrado
+ @staticmethod
+ def Cuadrado(Numero):
+  Cuadrado = Numero ** 2
+  return Cuadrado
+
+ #Eleva el número ingresado al cubo
+ @staticmethod
+ def Cubo(Numero):
+  Cubo = Numero ** 3
+  return Cubo
+
+#Permite al usuario ingresar el número con el que desea trabajar
+def Numero():
+ Numero = float(input("Ingrese un número",))
+
+ ## proceso ##
+ cuadrado=operaciones.Cuadrado(Numero)
+ cubo=operaciones.Cubo(Numero)
+
+ #salida
+ print("El valor del número al cuadrado es",cuadrado)
+ print("El valor del número al cubo es",cubo)
+
+
+## iniciador ##
+Numero()
