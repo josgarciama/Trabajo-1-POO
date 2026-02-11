@@ -13,7 +13,7 @@ class edades:
 
 def calcular_edades():
   ## ingreso de edad de Juan ##
-  Edad_Juan = int(input("Ingrese la edad de Juan: "))
+  Edad_Juan = float(input("Ingrese la edad de Juan: "))
   ## Calcular las edades de Alberto y Ana ##
   Edad_Alberto = edades.Calcular_edad_Alberto(Edad_Juan)
   Edad_Ana = edades.Calcular_edad_Ana(Edad_Juan)
