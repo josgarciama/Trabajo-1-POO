@@ -1,0 +1,34 @@
+class Nomina:
+  @staticmethod
+  def SalarioBruto(salario_hora, horas_trabajadas):
+    return salario_hora * horas_trabajadas
+
+  @staticmethod
+  def RetencionFuente(salario_bruto, por_retefuente):
+    return salario_bruto * por_retefuente
+
+  @staticmethod
+  def SalarioNeto(salario_bruto, retencion_fuente):
+    return salario_bruto - retencion_fuente
+
+## entrada ##
+def calcular_nomina():
+# ingresa el número de horas trabajadas
+  horas_trabajadas = float(input("Ingrese el número de horas trabajadas: "))
+# ingresa el valor de cada hora trabajada
+  salario_hora = float(input("Ingrese el valor de la hora: "))
+# ingresa el valor de la retefuente en decimal
+  por_retefuente = float(input("Ingrese el valor de la retefuente en números decimales, separado por un punto: "))
+
+## Proceso ##
+  salario_bruto = Nomina.SalarioBruto(salario_hora, horas_trabajadas)
+  retencion_fuente = Nomina.RetencionFuente(salario_bruto, por_retefuente)
+  salario_neto = Nomina.SalarioNeto(salario_bruto, retencion_fuente)
+
+  # salida
+  print(f"El valor del salario bruto es: {salario_bruto}")
+  print(f"El valor de la retefuente es: {retencion_fuente}")
+  print(f"El valor del salario neto es: {salario_neto}")
+
+# iniciador
+calcular_nomina()
